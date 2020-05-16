@@ -5,20 +5,20 @@ import java.util.Scanner;
 
 public class main {
 
-	static Random random = new Random();
-	static String[] procrastinationPack = new String[]{"Rivals", "Rivals", "Rivals","Facebook", "Reddit"};
-	static String[] reading = new String[]{ "HN", "HN", "Reading", "Reading", "Pocket"};
-	static String[] fitness = new String[]{"Stretch"};
-	static String[] cats = new String[]{"Cat Petting", "Cat Petting"};
-	static ArrayList<String> nameList = new ArrayList<String>();
-	static Scanner input = new Scanner(System.in);
+	static final Random random = new Random();
+	static final String[] procrastinationPack = new String[]{"Rivals", "Rivals", "Rivals","Facebook", "Reddit"};
+	static final String[] reading = new String[]{ "HN", "HN", "Reading", "Reading", "Pocket"};
+	static final String[] fitness = new String[]{"Stretch"};
+	static final String[] cats = new String[]{"Cat Petting", "Cat Petting"};
+	static ArrayList<String> nameList = new ArrayList<>();
+	static final Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args)
 	{
-		nameList.add(String.valueOf(procrastinationPack));
-		nameList.add(String.valueOf(reading));
-		nameList.add(String.valueOf(fitness));
-		nameList.add(String.valueOf(cats));
+		nameList.addAll(Arrays.asList(procrastinationPack));
+		nameList.addAll(Arrays.asList(reading));
+		nameList.addAll(Arrays.asList(fitness));
+		nameList.addAll(Arrays.asList(cats));
 
 
 		boolean pickingNames = true;
